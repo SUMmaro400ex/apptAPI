@@ -14,5 +14,17 @@ module API
       render json: appointments, status: 200
     end
 
+    def create
+     appointment = Appointment.new(appointment_params)
+     if appointment.save
+       render json: appointment, status: 201, location: appointment
+     end
+    end
+
+    private
+    def appointment_params
+     params.require(:appointment, :first_name, :last_name, :start_time, :end_time).permit(:comments)
+    end
+
   end
 end
