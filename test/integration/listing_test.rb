@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ListingTest < ActionDispatch::IntegrationTest
   # setup code here
-  setup { host! 'api.example.com'}
+  setup { host! 'example.com'}
 
   test 'returns a list of appointments' do
     get '/appointments'

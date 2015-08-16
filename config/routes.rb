@@ -8,9 +8,9 @@ Rails.application.routes.draw do
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
-  namespace :api, path: '/', constraints: {subdomain: 'api'} do
-    resources :appointments
-  end
+  # namespace :api, path: '/', constraints: {subdomain: 'api'} do
+  #   resources :appointments
+  # end
 
   resources :appointments
 
