@@ -3,8 +3,17 @@
 This is an API for handling appointments.
 It checks that appointments are in the future, don't overlap existing appointments, and that all appointments have a first and last name associated with it.
 
-This app was developed in rails to utilize the built in integration testing.
-This API was developed using TDD.
+Technology Choices
+- This API was developed in rails
+  - Rails was selected for its built in integration testing capabilities
+- Testing
+  - This API was developed using TDD. 
+  - Integration testing was done to ensure API functionality
+  - Faster, and easier than testing through CURL commands in the terminal
+- Heroku
+  - Heroku is hosting the API
+  - Postgres was selected as the database as a result
+  
 
 List
 - GET request = https://aqueous-crag-9399.herokuapp.com/
@@ -33,5 +42,5 @@ Delete
 - By appointment id
 - delete https://aqueous-crag-9399.herokuapp.com/'appointment_id'
 
-
+For further information, please refer to the integration tests
 
