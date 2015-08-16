@@ -1,7 +1,10 @@
 == README
 
-This is an API for handling appointments.
-It checks that appointments are in the future, don't overlap existing appointments, and that all appointments have a first and last name associated with it.
+This is an API for handling appointments. 
+It can display a list of all appointments or a filtered list of appointments.
+When adding new appointments, the app checks that appointments are in the future and don't overlap existing appointments.
+Additionally, all appointments must have a first and last name associated with it.
+A comment can be added to the appointment if desired.
 
 Technology Choices
 - This API was developed in rails
