@@ -1,4 +1,5 @@
 class AppointmentsController < ApplicationController
+  before_action :set_appt, only: [:update, :destroy]
 
   def index
     appointments = Appointment.all
@@ -28,23 +29,25 @@ class AppointmentsController < ApplicationController
   end
 
   def update
-   appointment = Appointment.find(params[:id])
-   if appointment.update(appointment_params)
-     render json: appointment, status: 200
+   if @appointment.update(appointment_params)
+     render json: @appointment, status: 200
    else
-     render json: appointment.errors, status: 422
+     render json: @appointment.errors, status: 422
    end
   end
 
   def destroy
-    appointment = Appointment.find(params[:id])
-    appointment.destroy
+    @appointment.destroy
     head 204
   end
 
   private
   def appointment_params
     params.require(:appointment).permit(:comments, :first_name, :last_name, :start_time, :end_time)
+  end
+
+  def set_appt
+    @appointment = Appointment.find(params[:id])
   end
 
 end
