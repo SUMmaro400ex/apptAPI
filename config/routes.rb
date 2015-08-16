@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   # namespace :api, path: '/', constraints: {subdomain: 'api'} do
   #   resources :appointments
   # end
-
+  root 'appointments#index'
   resources :appointments
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
