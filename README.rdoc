@@ -18,21 +18,20 @@ Create
 - Example:
   - post 'https://aqueous-crag-9399.herokuapp.com/',
     { appointment:
-      { first_name: 'Jon', last_name: 'Rose', start_time: '0011-05-2017T11:00:00.000Z', end_time: '0011-06-2017T11:00:00.000Z' }
-    }
+      { first_name: 'Jon', last_name: 'Rose', start_time: '0011-05-2017T11:00:00.000Z', end_time: '0011-06-2017T11:00:00.000Z' }}
 Update
 - By appointment id
-- patch first name https://aqueous-crag-9399.herokuapp.com/'appointment id',
+- patch first name https://aqueous-crag-9399.herokuapp.com/'appointment_id',
      { appointment: { first_name: 'Update Edit' } }
-- patch last name https://aqueous-crag-9399.herokuapp.com/'appointment id',
+- patch last name https://aqueous-crag-9399.herokuapp.com/'appointment_id',
      { appointment: { last_name: 'Update Edit' } }
- - patch start time https://aqueous-crag-9399.herokuapp.com/'appointment id',
+ - patch start time https://aqueous-crag-9399.herokuapp.com/'appointment_id',
      { appointment: { start_time: 'Update Edit' } }
-- patch end time https://aqueous-crag-9399.herokuapp.com/'appointment id',
+- patch end time https://aqueous-crag-9399.herokuapp.com/'appointment_id',
      { appointment: { end_time: 'Update Edit' } }
      
 Delete
 - By appointment id
-- delete https://aqueous-crag-9399.herokuapp.com/'appointment id'
+- delete https://aqueous-crag-9399.herokuapp.com/'appointment_id'
 
 
