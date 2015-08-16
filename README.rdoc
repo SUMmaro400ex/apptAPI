@@ -17,8 +17,7 @@ Create
 - comments is an optional string field
 - Example:
   - post 'https://aqueous-crag-9399.herokuapp.com/',
-    { appointment:
-      { first_name: 'Jon', last_name: 'Rose', start_time: '0011-05-2017T11:00:00.000Z', end_time: '0011-06-2017T11:00:00.000Z' }}
+    { appointment: { first_name: 'Jon', last_name: 'Rose', start_time: '0011-05-2017T11:00:00.000Z', end_time: '0011-06-2017T11:00:00.000Z' }}
 Update
 - By appointment id
 - patch first name https://aqueous-crag-9399.herokuapp.com/'appointment_id',
